@@ -19,8 +19,8 @@ app.get('/api', (req, res) => {
 
     const currentUTC = currentDate.toISOString();
 
-    const githubFileURL = "";
-    const githubRepoURL = ""
+    const githubFileURL = "https://github.com/elQ3ndie/Stage1_Backend/blob/main/index.js";
+    const githubRepoURL = "https://github.com/elQ3ndie/Stage1_Backend"
 
     const jsonResponse = {
         slack_name,
