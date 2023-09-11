@@ -17,7 +17,7 @@ app.get('/api', (req, res) => {
     const daysOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
     const currentDay = daysOfWeek[current];
 
-    const currentUTC = currentDate.toISOString();
+    const currentUTC = currentDate.toISOString().slice(0, 19) + 'Z';
 
     const githubFileURL = "https://github.com/elQ3ndie/Stage1_Backend/blob/main/index.js";
     const githubRepoURL = "https://github.com/elQ3ndie/Stage1_Backend"
@@ -38,7 +38,7 @@ app.get('/api', (req, res) => {
 
 
 app.listen(port,() => {{}
-    console.log(`Server is running on port ${port}`);
+    console.log(`Server is running on port https://localhost:${port}`);
 });
 
 
